@@ -7,15 +7,15 @@ def task1():
         'Амстердам' : 'Нидерланды',
         'Андорра-ла-Велья' : 'Андорра'
     }
-    print(d)
+    print("Страны", d.keys())
     inp = input("Введите страну: ")
-    print("Столица ", inp, " - ",d[inp])
+    print("Столица страны ", inp, " - ",d[inp])
     d2 = dict(sorted(d.items()))
-    print(d2)
+    print("Отсортированные страны",d2)
 def task2():
     print("TASK2")
     sim = {"АВЕИНОРСТ" : 1, "ДКЛМПУ" : 2, "БГЁЬЯ" : 3, "ЙЫ" : 4, "ЖЗХЦЧ" : 5, "ШЭЮ" : 8, "ФЩЪ" : 10}
-    word = input("Введите ваше слово: ")
+    word = input("Введите ваше слово(CAPS): ")
     res = 0
     for i in word:
         for name,value in sim.items():
